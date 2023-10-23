@@ -3,8 +3,8 @@ Webflow.push(function() {
 
   var Swipes = new Swiper('.home-slider-projects', {
     direction: 'horizontal',
-    loop: true,
-    slidesPerView: 1.2,
+    loop: false,
+    slidesPerView: 1,
     spaceBetween: 20,
     freeMode: true,
     watchSlidesVisibility: true,
