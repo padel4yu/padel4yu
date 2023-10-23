@@ -1,64 +1,11 @@
 
 import '../home.scss'
+import './home/courts-gallery.js'
+import './home/projects-slider.js'
 
 
 var webflow = webflow || [];
 Webflow.push(function() {
-
-  var galleryThumbs = new Swiper('.gallery-thumbs1', {
-    spaceBetween: 20,
-    slidesPerView: 2,
-    freeMode: true,
-    watchSlidesVisibility: true,
-    watchSlidesProgress: true,
-    breakpoints: {
-      767: {
-        slidesPerView: 4,
-        spaceBetween: 20
-      },
-    }
-  });
-  var galleryTop = new Swiper('.gallery-top1', {
-    spaceBetween: 10,
-    thumbs: {
-      swiper: galleryThumbs
-    }
-  });
-  
-  var galleryThumbs = new Swiper('.gallery-thumbs2', {
-    spaceBetween: 20,
-    slidesPerView: 2,
-    freeMode: true,
-    watchSlidesVisibility: true,
-    watchSlidesProgress: true,
-    breakpoints: {
-      767: {
-        slidesPerView: 4,
-        spaceBetween: 20
-      },
-    }
-  });
-  var galleryTop = new Swiper('.gallery-top2', {
-    spaceBetween: 10,
-    thumbs: {
-      swiper: galleryThumbs
-    }
-  });
-
-  var Swipes = new Swiper('.home-slider-projects', {
-    direction: 'horizontal',
-    loop: false,
-    slidesPerView: 1.2,
-    spaceBetween: 20,
-    freeMode: true,
-    watchSlidesVisibility: true,
-    watchSlidesProgress: true,
-      // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
 
   // this function will check if the cookie "popup" exist
   // and if it does not it will show the popup form
