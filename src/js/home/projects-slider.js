@@ -4,7 +4,7 @@ Webflow.push(function() {
   var Swipes = new Swiper('.home-slider-projects', {
     direction: 'horizontal',
     loop: false,
-    slidesPerView: 1,
+    slidesPerView: 1.2,
     spaceBetween: 20,
     freeMode: true,
     watchSlidesVisibility: true,
