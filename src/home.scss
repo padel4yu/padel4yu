@@ -133,16 +133,16 @@
 }
 
 #rotatingText{
-  max-width: 140px;
-  max-height: 140px;
+  max-width: 30%;
+  aspect-ratio: 1 / 1;
   animation-name: rotate-circle;
   animation-duration: 10s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  @media screen and (max-width: 479px){
-    max-width: 100px;
-    max-height: 100px;
-  }
+  // @media screen and (max-width: 479px){
+  //   max-width: 100px;
+  //   max-height: 100px;
+  // }
 }
 
 @keyframes rotate-circle {
