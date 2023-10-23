@@ -1,0 +1,117 @@
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+  
+.main-wrapper{
+  overflow-x: hidden;
+}
+
+.text-underline{
+  position: relative;
+  &:after{
+    content: "";
+    position: absolute;
+    bottom: 15%;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://uploads-ssl.webflow.com/651e65d36bb7f6d238337af9/651fc4b4a1d5a86bd36e0d9e_text-underline.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    z-index: -1;
+  }
+}
+
+.klaviyo-form{
+  background-color: #fff8f2;
+}
+
+.w-nav-link.w--current{
+  color: #999;
+}
+  
+/* main menu hamburger button*/
+.main-menu-hamburger-wrapper{
+  display:flex;
+  flex-direction:column;
+  width: 70px;
+  cursor:pointer;
+  scale: 0.4;
+  margin-bottom: 0px !important;
+
+  span{
+    background: #333;
+    border-radius:10px;
+    height:7px;
+    margin: 7px 0;
+    transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  }
+
+  span:nth-of-type(1){
+    width:50%;
+  }
+
+  span:nth-of-type(2){
+    width:100%;
+  }
+
+  span:nth-of-type(3){
+    width:75%;
+  }
+
+  input[type="checkbox"]{
+    display:none;
+  }
+
+  input[type="checkbox"]:checked ~ span:nth-of-type(1){
+    transform-origin:bottom;
+    transform:rotatez(45deg) translate(8px,0px)
+  }
+
+  input[type="checkbox"]:checked ~ span:nth-of-type(1){
+    transform-origin:bottom;
+    transform:rotatez(45deg) translate(8px,0px)
+  }
+
+  input[type="checkbox"]:checked ~ span:nth-of-type(2){
+    transform-origin:top;
+    transform:rotatez(-45deg)
+  }
+
+  input[type="checkbox"]:checked ~ span:nth-of-type(3){
+    transform-origin:bottom;
+    width:50%;
+    transform: translate(30px,-11px) rotatez(45deg);
+  }
+}
+  
+/* main menu links*/
+@media screen and (max-width: 1220px){
+  .nav-menu-link{
+      font-size: 1rem;
+      padding: 20px 10px;
+  }
+}
+@media screen and (max-width: 1050px){
+  .main-menu-cta{
+    display: none;
+  }
+}
+
+/* weglot mobile links*/
+.wg-selector-1{
+  opacity: 1!important;
+}
+.active-language .weglot-text{
+  color: #fff;
+}
+
+.w-checkbox-input--inputType-custom{
+  border: 1px solid #ccc !important;
+}
+  

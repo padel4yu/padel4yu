@@ -1,0 +1,159 @@
+
+/* code for preventing mouse blinking vertical line when user clicks on a plus symbol */
+.home-faq-accordion-plus-wrapper,
+.home-proposition-box-button-plus,
+.w-nav-button,
+.main-menu-hamburger-wrapper{
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+/* marquee */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 1rem));
+  }
+}
+
+.home-hero-marquee-content {
+  animation: scroll 20s linear infinite;
+}
+
+
+/* our process tabs */
+.home-process-tabs-menu {
+  .home-process-tab-id{
+    transition: all 0.2s;
+  }
+
+  .w--current {
+    .home-process-tab-id{
+      color: #F8744C;
+    }
+    .home-process-tab-name{
+      color: #F8744C;
+    }
+  }
+  
+  .home-process-tab-name{
+    transition: all 0.2s;
+  }
+
+} 
+
+.section_home-courts {
+  .tab-content-cta{
+    width: fit-content;
+  }
+  .w-tab-content{
+    overflow: visible;
+  }
+} 
+
+/* home faq accordion */
+.home-faq-accordion-box-answer{
+	transition: all 0.2s;
+}
+.open {
+  .home-faq-accordion-box-answer{
+    max-height: 1500px;
+  } 
+}
+
+/* process accordion */
+.home-process-accordion-answer{
+	transition: all 0.2s;
+}
+.open {
+  .home-process-accordion-answer{
+    max-height: 1000px;
+  } 
+  .home-process-accordion-question{
+    transform: translateX(30px);
+  }
+  .home-process-accordion-question .home-process-tab-id{
+    color: #f8744c;
+  }
+  .home-process-accordion-question .home-process-tab-name{
+    color: #f8744c;
+  }
+}
+  
+/*FAQ accordion */
+.open {
+  .home-faq-horizontal-line{
+    transform: translate3d(-50%, -50%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(180deg) skew(0deg, 0deg); 
+    transform-style: preserve-3d;
+  }
+  .home-faq-vertical-line{
+    transform: translate3d(-50%, -50%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(90deg) skew(0deg, 0deg); 
+    transform-style: preserve-3d;
+  }  
+}
+
+.home-faq-accordion-box{
+	width: calc(50% - 10px);
+  @media screen and (max-width: 568px){
+    width: 100%;
+  }
+}
+
+.home-process-tabs-menu .w--current .home-process-tab-id,
+.home-process-tabs-menu .w--current .home-process-tab-name{
+	color: #F8744C !important;
+}
+
+@media screen and (max-width: 1250px){
+ .home-contact-title{
+	font-size: 4rem;
+ }
+}
+
+/* hero spinning text */
+.home-hero-spinning-circle {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+
+  .home-hero-spinning-text {
+    font-weight: 400;
+    letter-spacing: 7.2px;
+    text-transform: uppercase;
+    font-size: 17px;
+    fill: #333;
+  }
+
+  .home-hero-spinning-image{
+    position: absolute;
+  }
+}
+
+#rotatingText{
+  max-width: 140px;
+  max-height: 140px;
+  animation-name: rotate-circle;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  @media screen and (max-width: 479px){
+    max-width: 100px;
+    max-height: 100px;
+  }
+}
+
+@keyframes rotate-circle {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+/* projects swiper awwors */
+.home-projects-swiper-arrows .swiper-button-next:after, 
+.home-projects-swiper-arrows .swiper-button-prev:after{
+	color: #F8744C;
+}
+
