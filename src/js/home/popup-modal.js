@@ -31,7 +31,6 @@ Webflow.push(function() {
 
   //execute function when the user has scrolled 30% down the page
   function showPopupModal() {
-    console.log('popupShowed', popupShowed);
     // Function to check if the "popup" cookie exists
     function checkPopupCookie() {
       const cookies = document.cookie.split('; ');
