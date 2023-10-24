@@ -70,4 +70,17 @@ window.Webflow.push(() =>{
   addObserverIfDesiredNodeAvailable();
       
 
+
+  // when a page has scrolled more than 100px from the top
+  // we add a is-scrolled class to the main menu
+  // and we remove this class when the page has scrolled back to the top
+  // we added a css shadow to this class
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+      $('.navbar-container').addClass('is-scrolled');
+    } else {
+      $('.navbar-container').removeClass('is-scrolled');
+    }
+  });
+
 });
