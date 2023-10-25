@@ -118,3 +118,27 @@ body {
 .is-scrolled{
   box-shadow: 0px 1px 10px 0px rgba(0,0,0,.1);
 }
+
+// custom select color
+@media (prefers-reduced-motion: no-preference) {
+	:focus-visible {
+		transition: outline-offset 75ms ease-out;
+    transition-duration: .25s;
+	}
+}
+
+:focus-visible {
+	outline-offset: 0.1rem;
+  outline: #f8744c auto 0.1rem !important;
+  border-color: black !important;
+}
+
+::selection {
+  background: #f8744c; /* WebKit/Blink Browsers */
+  color: white;
+
+}
+::-moz-selection {
+  background: #f8744c; /* Gecko Browsers */
+	color: white;
+}
