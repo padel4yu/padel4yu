@@ -159,10 +159,10 @@
 	color: #F8744C;
 }
 
-.section_home-projects .container-large{
+.section_home-projects .home-projects-slider-padding .container-large{
   transform: translateX(-20px);
   @media screen and (max-width: 1370px){
-    transform: translateX(0);
+    transform: none;
   }
 }
 
