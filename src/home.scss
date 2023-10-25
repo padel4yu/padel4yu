@@ -159,5 +159,10 @@
 	color: #F8744C;
 }
 
-
+.section_home-projects .container-large{
+  transform: translateX(-20px);
+  @media screen and (max-width: 1370px){
+    transform: translateX(0);
+  }
+}
 
