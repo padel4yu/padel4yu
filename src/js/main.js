@@ -77,9 +77,9 @@ window.Webflow.push(() =>{
   // we added a css shadow to this class
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
-      $('.navbar-container').addClass('is-scrolled');
+      $('.navbar').addClass('is-scrolled');
     } else {
-      $('.navbar-container').removeClass('is-scrolled');
+      $('.navbar').removeClass('is-scrolled');
     }
   });
 
