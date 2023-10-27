@@ -156,8 +156,19 @@
 /* projects swiper arrors */
 .home-projects-swiper-arrows .swiper-button-next:after, 
 .home-projects-swiper-arrows .swiper-button-prev:after{
-	color: #F8744C;
+	color: #fff;
+  font-size: 30px;
 }
+
+/* hotels slider arrows */
+.home-projects-swiper-arrows .swiper-button-prev,
+.home-projects-swiper-arrows .swiper-button-next {
+		width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: #f8744c;
+}
+
 
 .section_home-projects .home-projects-slider-padding .container-large{
   transform: translateX(-20px);
@@ -167,12 +178,4 @@
 }
 
 
-/* hotels slider arrows */
-.home-projects-swiper-arrows .swiper-button-prev,
-.home-projects-swiper-arrows .swiper-button-next {
-		width: 84px;
-    height: 84px;
-    border-radius: 50%;
-    border: 1px solid #f8744c;
-}
 
