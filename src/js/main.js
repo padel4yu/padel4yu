@@ -84,3 +84,18 @@ window.Webflow.push(() =>{
   });
 
 });
+
+
+
+
+  // get height and multiply by 1% to get a vh value
+  let vh = window.innerHeight * 0.01;
+  // set the value to custom property --vh
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+  
+  // Listen for window resize event
+  window.addEventListener('resize', () => {
+    // Repeat above
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  });
