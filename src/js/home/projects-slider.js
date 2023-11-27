@@ -1,6 +1,7 @@
 var webflow = webflow || [];
 Webflow.push(function() {
 
+
   var Swipes = new Swiper('.home-slider-projects', {
     direction: 'horizontal',
     loop: false,
