@@ -158,6 +158,9 @@
 .home-projects-swiper-arrows .swiper-button-prev:after{
 	color: #fff;
   font-size: 30px;
+  @media screen and (max-width: 767px){
+    font-size: 20px;
+  }
 }
 
 /* hotels slider arrows */
@@ -167,6 +170,10 @@
     height: 64px;
     border-radius: 50%;
     background-color: #f8744c;
+    @media screen and (max-width: 767px){
+      height: 45px;
+      width: 45px;
+    }
 }
 
 
