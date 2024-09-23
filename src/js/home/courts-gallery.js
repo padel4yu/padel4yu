@@ -17,7 +17,7 @@ Webflow.push(function() {
   var galleryTop1 = new Swiper('.gallery-top1', {
     spaceBetween: 10,
     thumbs: {
-      swiper: galleryThumbs
+      swiper: galleryThumbs1
     }
   });
   
@@ -37,7 +37,7 @@ Webflow.push(function() {
   var galleryTop2 = new Swiper('.gallery-top2', {
     spaceBetween: 10,
     thumbs: {
-      swiper: galleryThumbs
+      swiper: galleryThumbs2
     }
   });
 
@@ -61,7 +61,7 @@ Webflow.push(function() {
     var galleryTop3 = new Swiper('.gallery-top3', {
       spaceBetween: 10,
       thumbs: {
-        swiper: galleryThumbs
+        swiper: galleryThumbs3
       }
     });
   }
